@@ -33,6 +33,12 @@ pipeline {
                 }
             }
         }
+        
+        stage("publish to tomcat") {
+            steps {
+                bat '''copy C:\\Users\\Mayuresh.Marathe\\git\\JenkinsCICDExample\\jenkinsCICD\\target\\*.war C:\\Users\\Mayuresh.Marathe\\Desktop\\apache-tomcat-8.5.54\\webapps'''
+            }
+        }
        
     }
 }
