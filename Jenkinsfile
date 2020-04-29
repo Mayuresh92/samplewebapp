@@ -29,7 +29,7 @@ pipeline {
                 script {
                     // If you are using Windows then you should use "bat" step
                     // Since unit testing is out of the scope we skip them
-                    bat 'mvn clean compile'
+                    bat 'mvn clean install'
                 }
             }
         }
